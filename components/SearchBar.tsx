@@ -33,12 +33,12 @@ const SearchBar = () => {
     if (model) {
       searchParams.set("model", model);
     } else {
-      searchParams.delete("model", model);
+      searchParams.delete("model");
     }
     if (manufacturer) {
       searchParams.set("manufacturer", manufacturer);
     } else {
-      searchParams.delete("manufacturer", manufacturer);
+      searchParams.delete("manufacturer");
     }
 
     const newPathname = `${
